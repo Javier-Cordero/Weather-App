@@ -25,11 +25,10 @@ export const useData = () => {
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
-                // Función de éxito
                 const latitud = position.coords.latitude;
                 const longitud = position.coords.longitude;
                 const apiKey = 'bd9dc44134d81a9ff53c6b13a921e023';
-                const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}&units=metric&lang=es`;
+                const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}&units=metric&lang=en`;
                 fetchWeatherData(url);
             },
                 (error) => {

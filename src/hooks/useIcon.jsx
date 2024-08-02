@@ -34,5 +34,5 @@ export function useIcon() {
         '50n': Hail,
     };
     const iconUrl = iconMap[icon] || Clear;
-    return { iconUrl, formatDate };
+    return { iconUrl, formatDate, iconMap };
 }
