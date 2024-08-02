@@ -32,6 +32,6 @@ export function useStatus() {
         return 'Unknown';
     }
     useEffect(() => { setRotate(windDegree) }, [windDegree])
-    useEffect(() => { setPorcentaje(humidity * 2) }, [humidity])
+    useEffect(() => { setPorcentaje(humidity * 3.2) }, [humidity])
     return { windSpeed, windDegree, getWindDirection, rotate, porcentaje, humidity, visibility, air }
 }

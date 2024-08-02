@@ -25,6 +25,7 @@ export const useData = () => {
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
+
                 const latitud = position.coords.latitude;
                 const longitud = position.coords.longitude;
                 const apiKey = 'bd9dc44134d81a9ff53c6b13a921e023';
